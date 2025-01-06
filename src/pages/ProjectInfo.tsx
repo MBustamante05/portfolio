@@ -25,6 +25,7 @@ function ProjectInfo() {
   const [technologies, setTechnologies] = useState<string[]>([]);
 
   useEffect(() => {
+    window.scroll(0,0);
     const project = projects.find((p) => p.id === Number(projectId));
     if (project) {
       const title = project.name.split(" ");
