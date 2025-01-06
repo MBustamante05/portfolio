@@ -39,7 +39,7 @@ function ProjectInfo() {
   }, [projectId]);
   return (
     <div className="bg-black min-h-screen pb-10">
-      <Navbar />
+      <Navbar showLinks={false}/>
       <div className="w-[748px] mx-auto mt-10">
         <h1 className="text-7xl text-white drop-shadow-[0_3px_1px_rgba(50,50,50,2.25)] font-bold">
           {titleUp}

@@ -20,7 +20,7 @@ function About() {
     "Sass",
   ];
   return (
-    <div className="my-20 w-[748px] mx-auto">
+    <div id="about" className="my-20 w-[748px] mx-auto">
       <h1 className="text-7xl font-bold text-white">About</h1>
       <div className="grid lg:grid-cols-2 mt-12 gap-10">
         <div className="col-span-1">

@@ -53,7 +53,7 @@ function Contact() {
   };
 
   return (
-    <div className="my-20  h-screen relative">
+    <div id="contact" className="my-20  h-screen relative">
       <div className="w-[748px] mx-auto">
         <h1 className="text-7xl font-bold text-white">Let's work</h1>
         <h1 className="text-7xl font-bold text-primary mb-10">Together!</h1>

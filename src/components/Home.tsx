@@ -3,8 +3,8 @@ import Navbar from "./Navbar";
 function Home() {
   
   return (
-    <div className="bg-black h-screen">
-      <Navbar />
+    <div id="home" className="bg-black h-screen">
+      <Navbar showLinks={true}/>
       <div className="w-[748px] mx-auto mt-14">
         <div className="flex gap-3 mb-10 relative">
           <div className="block z-10">

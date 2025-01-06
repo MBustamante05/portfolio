@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <div className="pb-20 bg-black min-h-screen">
+    <div id="projects" className="pb-20 bg-black min-h-screen">
       <div className="mx-auto w-[748px] pt-20">
         <h1 className="text-7xl font-bold text-white">Projects</h1>
         <div className="grid lg:grid-cols-2 gap-5 mt-12">
