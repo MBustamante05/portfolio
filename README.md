@@ -1,15 +1,15 @@
-## Maria Bustamante Portfolio Site
+# Maria Bustamante Portfolio Site
 My React-based portfolio site showcasing a collection of my projects.
 
-# Tech stack
+## Tech stack
 - React
 - CSS (custom styling)
 - Tailwind (for grid + utilities)
 
-# Overview
+## Overview
 This project serves as a simple library of my projects, with contact links and some details about me.
 
-# Inspiration
+## Inspiration
 This project drew inspiration from various sources, with the main ones being:
 
 - Ben Oldham: https://www.benoldham.dev/
