@@ -3,7 +3,7 @@ import Tool from "./Tool";
 
 function About() {
   const tools = [
-    "Javascriot",
+    "Javascript",
     "HTML",
     "CSS",
     "React",
@@ -15,12 +15,13 @@ function About() {
     "Node.js",
     "Express.js",
     "MongoDB",
+    "Mongoose",
     "Postman",
     "Sass",
   ];
   return (
     <div className="my-20 w-[748px] mx-auto">
-      <h1 className="text-6xl font-bold text-white">About</h1>
+      <h1 className="text-7xl font-bold text-white">About</h1>
       <div className="grid lg:grid-cols-2 mt-12 gap-10">
         <div className="col-span-1">
           <p>
@@ -48,8 +49,8 @@ function About() {
             </h2>
           </div>
           <div className="flex flex-wrap gap-2 mt-5">
-              {tools.map((tool) => (
-                <Tool language={tool} />
+              {tools.map((tool, i) => (
+                <Tool key={i} language={tool} />
               ))}
             </div>
         </div>
