@@ -9,10 +9,11 @@ function Projects() {
         <div className="grid lg:grid-cols-2 gap-5 mt-12">
           {projects.map((project) => (
             <ProjectCard
+            id={project.id}
               key={project.name}
               name={project.name}
               description={project.description}
-              image={project.image}
+              image={project.images[0]}
               github={project.github}
               live={project.live}
             />

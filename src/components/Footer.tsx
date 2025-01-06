@@ -2,7 +2,7 @@ import { Instagram, Mail } from "lucide-react";
 
 function Footer() {
   return (
-    <footer className="relative -bottom-20 footer text-neutral-content items-center p-4 block">
+    <footer className="relative bg-inherit -bottom-20 footer text-neutral-content items-center p-4 block">
       <nav className="flex gap-4 place-self-center mb-2">
         <a href="mailto:mosquerabustamante88@gmail.com">
           <Mail
