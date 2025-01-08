@@ -6,7 +6,8 @@ import Footer from "./Footer";
 function Contact() {
   const labelStyle = "block text-sm font-semibold mb-1";
   const inputStyle =
-    "input bg-neutral w-full max-w-xs focus:outline-0 focus:border-primary mb-4";
+    "input bg-neutral w-full sm:max-w-xs focus:outline-0 focus:border-primary mb-4";
+  const h1Style = "lg:text-7xl md:text-6xl text-5xl font-bold";
   const [sendinMessage, setSendingMessage] = useState(false);
 
   const form = useRef<HTMLFormElement>(null);
@@ -53,12 +54,12 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="my-20  h-screen relative">
-      <div className="w-[748px] mx-auto">
-        <h1 className="text-7xl font-bold text-white">Let's work</h1>
-        <h1 className="text-7xl font-bold text-primary mb-10">Together!</h1>
+    <div id="contact" className="my-20   relative">
+      <div className="md:w-[748px] w-full sm:px-3 px-5 mx-auto">
+        <h1 className={`${h1Style} text-white`}>Let's work</h1>
+        <h1 className={`${h1Style} font-bold text-primary mb-10`}>Together!</h1>
         <p>Connect with Me!</p>
-        <div className="grid md:grid-cols-2 mt-5 gap-5">
+        <div className="grid sm:grid-cols-2 mt-5 gap-5">
           <div className="col-span-1">
             <p>
               Feel free to reach out if you have any questions, ideas, or
@@ -94,7 +95,7 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="col-span-1">
+          <div className="lg:col-span-1">
             <form ref={form} onSubmit={sendEmail}>
               <div>
                 <label className={labelStyle}>Name</label>
@@ -119,7 +120,7 @@ function Contact() {
               <div>
                 <label className={labelStyle}>Message</label>
                 <textarea
-                  className="textarea bg-neutral w-full max-w-xs focus:outline-0 focus:border-primary text-base mb-4"
+                  className="textarea bg-neutral w-full sm:max-w-xs focus:outline-0 focus:border-primary text-base mb-4"
                   rows={5}
                   name="message"
                   placeholder="Your message..."

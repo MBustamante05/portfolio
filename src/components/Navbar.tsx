@@ -12,7 +12,7 @@ function Navbar({ showLinks }: Props) {
     "font-bold text-primary hover:text-primary-focus cursor-pointer border border-primary px-5 rounded-sm py-2 hover:bg-primary hover:text-white transition duration-300 ease-in-out cursor-pointer";
   const navigate = useNavigate();
   return (
-    <div className="navbar bg-black ps-5 pe-6">
+    <div className="navbar bg-black sm:ps-5 sm:pe-6">
       <div className="navbar-start">
         <div className="dropdown">
           {showLinks && (
@@ -39,7 +39,7 @@ function Navbar({ showLinks }: Props) {
               </div>
               <ul
                 tabIndex={0}
-                className="bg-black flex flex-col dropdown-content rounded-sm z-[1] mt-3 w-52 p-2 shadow z-20 gap-2"
+                className="bg-black flex flex-col dropdown-content rounded-sm z-[20] mt-3 w-52 p-2 shadow z-20 gap-2"
               >
                 <Link to="home" smooth={true} duration={500}>
                   <li className={liStyle}>Home</li>

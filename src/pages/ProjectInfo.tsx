@@ -13,6 +13,8 @@ import {
 import Footer from "../components/Footer";
 
 function ProjectInfo() {
+  const h1Style = "lg:text-7xl md:text-6xl text-5xl drop-shadow-[0_3px_1px_rgba(50,50,50,2.25)] font-bold";
+  const h2Style = "lg:text-5xl md:text-4xl text-3xl font-bold text-white";
   const links = "flex items-center gap-1 text-white px-3 py-1 bg-base-100 hover:bg-base-300 rounded-lg transition duration-300 ease-in-out";
 
   const { projectId } = useParams<{ projectId: string }>();
@@ -41,24 +43,24 @@ function ProjectInfo() {
   return (
     <div className="bg-black min-h-screen pb-10">
       <Navbar showLinks={false}/>
-      <div className="w-[748px] mx-auto mt-10">
-        <h1 className="text-7xl text-white drop-shadow-[0_3px_1px_rgba(50,50,50,2.25)] font-bold">
+      <div className="md:w-[748px] w-full sm:px-3 px-5 mx-auto mt-10">
+        <h1 className={`text-white ${h1Style}`}>
           {titleUp}
         </h1>
-        <h1 className="text-7xl text-primary drop-shadow-[0_3px_1px_rgba(50,50,50,2.25)] font-bold mb-7">
+        <h1 className={`text-primary ${h1Style}`}>
           {titleDown}
         </h1>
 
         <div className="flex items-center gap-5 my-5">
           <a href={live} className={links}>
-          <Link size={20} strokeWidth={1.75} absoluteStrokeWidth />
+          <Link size={16} strokeWidth={1.75} absoluteStrokeWidth />
             <p>View live</p>
           </a>
           <a
             href={github}
             className={links}
           >
-            <Github size={20} strokeWidth={1.75} />
+            <Github size={16} strokeWidth={1.75} />
             <p>Repository</p>
           </a>
         </div>
@@ -68,24 +70,24 @@ function ProjectInfo() {
           src={images[0]}
           alt={`${titleUp + " " + titleDown} images`}
         />
-        <div className="flex items-center text-white">
+        <div className="flex items-center text-white gap-2">
           <ChartNoAxesGantt
             className="text-primary "
-            size={40}
+            size={30}
             strokeWidth={3}
             absoluteStrokeWidth
           />
-          <h2 className="text-5xl font-bold text-white mb-2">Overview</h2>
+          <h2 className={`${h2Style} mb-2`}>Overview</h2>
         </div>
         <p>{description}</p>
         <div className="flex items-center text-white gap-3">
           <CodeXml
             className="relative -bottom-3 text-primary"
-            size={40}
+            size={30}
             strokeWidth={3}
             absoluteStrokeWidth
           />
-          <h2 className="text-5xl font-bold text-white mt-10 mb-5">
+          <h2 className={`${h2Style} mt-10 mb-5`}>
             Technologies
           </h2>
         </div>
@@ -98,11 +100,11 @@ function ProjectInfo() {
         <div className="flex items-center text-white gap-3">
           <Images
             className="relative -bottom-5 text-primary"
-            size={35}
+            size={26}
             strokeWidth={3}
             absoluteStrokeWidth
           />
-          <h2 className="text-5xl font-bold text-white mt-10 mb-2">
+          <h2 className={`${h2Style} mt-10 mb-2`}>
             Screenshots
           </h2>
         </div>

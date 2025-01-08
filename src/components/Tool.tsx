@@ -4,7 +4,7 @@ type Props = {
 }
 function Tool({ language }: Props) {
   return (
-    <div className="bg-primary rounded-full text-white px-4 py-2">{language}</div>
+    <div className="bg-primary sm:text-base text-sm rounded-full text-white px-4 sm:py-2 py-1">{language}</div>
   )
 }
 
