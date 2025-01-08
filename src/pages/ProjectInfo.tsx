@@ -36,7 +36,7 @@ function ProjectInfo() {
       setDescription(project.extendedDescription);
       setImages(project.images);
       setGithub(project.github);
-      setLive(project.live);
+      setLive(project.live ? project.live : "");
       setTechnologies(project.technologies);
     }
   }, [projectId]);
@@ -52,10 +52,13 @@ function ProjectInfo() {
         </h1>
 
         <div className="flex items-center gap-5 my-5">
-          <a href={live} className={links}>
+          {live !== "" &&  (
+            <a href={live} className={links}>
           <Link size={16} strokeWidth={1.75} absoluteStrokeWidth />
             <p>View live</p>
           </a>
+          )}
+          
           <a
             href={github}
             className={links}

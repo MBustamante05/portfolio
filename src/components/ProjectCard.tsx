@@ -7,7 +7,7 @@ type Props = {
   description: string;
   image: string;
   github: string;
-  live: string;
+  live?: string;
 };
 function ProjectCard({ id, name, description, image, github, live }: Props) {
   const navigate = useNavigate();
@@ -31,10 +31,13 @@ function ProjectCard({ id, name, description, image, github, live }: Props) {
         </div>
       </div>
       <div className="flex items-center justify-between mt-5">
-        <a href={live} className="flex items-center gap-1 hover:text-primary">
+        {live && (
+          <a href={live} className="flex items-center gap-1 hover:text-primary">
           <span>Live</span>
           <MoveRight className="hover:-rotate-45 relative -bottom-0.5 transition duration-300 ease-in-out" size={15} strokeWidth={1.75} absoluteStrokeWidth/>
         </a>
+        )}
+        
         <a
           href={github}
           className="hover:bg-primary text-white px-3 py-2 rounded-lg "

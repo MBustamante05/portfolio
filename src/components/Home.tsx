@@ -5,7 +5,7 @@ function Home() {
   return (
     <div id="home" className="bg-black lg:h-screen ">
       <Navbar showLinks={true}/>
-      <div className="md:w-[748px] w-full mx-auto mt-14 lg:pb-0:px-0 sm:px-3 px-5 pb-32 ">
+      <div className="md:w-[748px] w-full mx-auto mt-20 lg:pb-0:px-0 sm:px-3 px-5 pb-32 ">
         <div className="flex gap-3 mb-10 relative">
           <div className="block z-10">
             <p className="relative lg:text-2xl text-xl sm:w-3/4 sm:left-0 -left-2 text-primary-100 font-bold ms-3 border-b-4 border-primary">
