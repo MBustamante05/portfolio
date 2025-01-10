@@ -14,6 +14,11 @@ import meetHub2 from "../assets/meetHub/meetHub (2).png";
 import meetHub3 from "../assets/meetHub/meetHub (3).png";
 import meetHub1 from "../assets/meetHub/meetHub (4).png";
 
+import colorGen4 from "../assets/colorGenerator/colorGen (1).png";
+import colorGen1 from "../assets/colorGenerator/colorGen (2).png";
+import colorGen2 from "../assets/colorGenerator/colorGen (3).png";
+import colorGen3 from "../assets/colorGenerator/colorGen (4).png";
+
 
 export const projects = [
   {
@@ -44,5 +49,14 @@ export const projects = [
     images: [codeShare, codeShare2, codeShare3],
     github: "https://github.com/MBustamante05/code-sharing-challenge",
     live: "https://code-sharing-dmwx.onrender.com/"
+  },
+  {
+    id: 104,
+    name: "Color Generator",
+    description: "Simple web page where you can generate random colors but in a harmonious way",
+    extendedDescription: "Web page designed to create harmonious and visually appealing color palettes. Whether you're a designer seeking inspiration or just experimenting with color combinations, this tool allows you to generate, explore, and copy unique color schemes. Using intelligent algorithms and customizable options, it provides seamless integration of random and harmonious color generation for all your creative needs.",
+    technologies: ["React","Tailwind CSS", "Daisy UI", "CSS", "Javascript", "React Hot Toast", "ColorMind API"],
+    images: [colorGen1, colorGen2, colorGen3, colorGen4],
+    github: "https://github.com/MBustamante05/color-generator",
   }
 ]
